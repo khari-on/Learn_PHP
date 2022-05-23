@@ -62,15 +62,15 @@ $_SESSION
 
 
 //REQUEST
-if($_SERVER["REQUEST_METHOD"] == 'get'){
-    $name = $_GET["firstname"];
+// if($_SERVER["REQUEST_METHOD"] == 'get'){
+//     $name = $_GET["firstname"];
 
-    if(empty($name)){
-        echo "Name is empty";
-    }else{
-        echo "YOUR NAME IS " . $name;
-    }
-}
+//     if(empty($name)){
+//         echo "Name is empty";
+//     }else{
+//         echo "YOUR NAME IS " . $name;
+//     }
+// }
 
 ?>
 
