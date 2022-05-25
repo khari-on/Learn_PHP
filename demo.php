@@ -7,11 +7,15 @@
     <title>Welcome User's</title>
 </head>
 <body>
-   <h1>welcome <?php echo $_POST['name'] ?>
+hello
+
+
+
+   <!-- <h1>welcome <?php echo $_POST['name'] ?>
 </h1> 
 
 <h2>
     Your Email Address is :<?php echo $_POST['email'] ?>
-</h2>
+</h2> -->
 </body>
 </html>
