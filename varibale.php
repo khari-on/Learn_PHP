@@ -1,6 +1,4 @@
 <?php
-
-
-$name="Avodha ";
-$type ="Education";
+$name="Prasath";
+$email ="i351@gmail.com";
 ?>
