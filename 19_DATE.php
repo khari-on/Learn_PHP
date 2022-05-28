@@ -12,10 +12,11 @@
 </html>
 
 
+&copy; <?php echo date('Y'); ?>
+<span>
+copyrights by Avodha</span>
 
-<!-- &copy; <?//php echo date('Y'); ?> -->
 <?php
-
 //date(format,timestamp)
 
 //format - required speifi the time stamp 
@@ -60,8 +61,8 @@
 // $myTime =mktime(11,15,36,05,26,2023);
 
 // echo "Your Time is ". date("l d-m-Y",$myTime);
-$myTime =strtotime('+6 month');
+// $myTime =strtotime('+6 month');
 
 
-echo date("d-m-Y l h:i:sa",$myTime);
+// echo date("d-m-Y l h:i:sa",$myTime);
 ?>
