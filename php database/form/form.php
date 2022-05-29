@@ -61,7 +61,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     Name:<input type="text" name="name">
     <br><br>
-    Email<input type="email" name="email">
+    Email:<input type="email" name="email">
     <br><br>
 <input type="Submit">
     </form>
@@ -72,10 +72,48 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <div>
     output:
     <?php
-    echo "<br>";
-echo $name;
+           
+ //connect with the server database:
+
+ $servername="localhost";
+ $username="root";
+ $password="";
+ $database="form";
+
+ $con = mysqli_connect($servername,$username,$password,$database);
+ 
+ if(!$con){
+     die("Database is failed to connect");
+ }
+//display the entries in the UI
+
+$dis = "SELECT * FROM `client`";
+$disResult = mysqli_query($con,$dis);
+
+//how many rows are there in my database:
+
+$num = mysqli_num_rows($disResult);
+
 echo "<br>";
-echo $email;
+echo "The number of rows return in the data base  $num";
+echo "<br>";
+
+if($num >0){
+    // $rows=mysqli_fetch_assoc($disResult);
+// echo "$num";
+$no=1;
+while($rows=mysqli_fetch_assoc($disResult)){
+   
+    echo $no ." . ". $rows['name']." - " . $rows['email'];
+    //  echo var_dump($rows);
+echo "<br>";
+ $no=$no+1;
+    };
+}
+
+
+
+
     ?>
 </div>
 </body>
