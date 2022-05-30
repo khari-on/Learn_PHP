@@ -9,10 +9,17 @@
 <body>
     <?php
     
-    $x=acos(45.4);
+    // $x=acos(45.4);
 
-    var_dump($x)
+    // var_dump($x)
     
+
+    //checkin cookies are enabled are not;
+    if(count($_COOKIE) >0){
+        echo "Cookies is enabled here ";
+    }else{
+        echo "No cookies is Availbe Here";
+    }
     
     ?>
 </body>

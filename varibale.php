@@ -1,4 +1,5 @@
 <?php
-$name="Prasath";
-$email ="i351@gmail.com";
+session_unset();
+
+session_destroy();
 ?>
